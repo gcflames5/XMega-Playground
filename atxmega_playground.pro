@@ -1,4 +1,4 @@
-update=1/6/2017 4:51:41 PM
+update=1/7/2017 7:48:09 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=lib/atxmega_playground
+LibName31=lib/IHE
