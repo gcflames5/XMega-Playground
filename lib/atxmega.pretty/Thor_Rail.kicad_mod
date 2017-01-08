@@ -1,0 +1,12 @@
+(module Thor_Rail locked (layer F.Cu) (tedit 56B915F1)
+  (fp_text reference REF** (at 2.286 -0.6477) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Thor_Rail (at 5.461 14.351) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" connect rect (at 10.7442 26.3525) (size 21.4884 1.905) (layers B.Cu B.Mask))
+  (pad "" connect rect (at 2.54 13.6525) (size 5.08 27.305) (layers B.Cu B.Mask))
+  (pad "" connect rect (at 2.54 13.6525) (size 5.08 27.305) (layers F.Cu F.Mask))
+  (pad "" connect rect (at 10.7442 26.3525) (size 21.4884 1.905) (layers F.Cu F.Mask))
+)
