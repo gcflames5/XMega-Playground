@@ -1,33 +1,30 @@
-Atxmega Playground
+XMega Playground
 ====
-This board aims to serve as a space where users can test and learn embedded C, providing the means to utilizie most of the Atmel XMega AVR microcontroller's functionality. This particular project uses the ATXMega32a4u microcontroller. It aims to implement most of the communication protocols that the MCU is capable of as well as including some other peripherals. 
 
-Checklist
+Overview
 ----
- - Main Idea: Make a board that allows members to play around with code and various communication protocols
- - Components
-	- [ ] I2C
-		- [ ] Accelerometer
-	- [ ] SPI (Multiple Devices)
-		- [ ] 2MB Flash Memory (SST25LF020A)
-	- [ ] CAN
-		- [ ] HI-3110 CAN Transciever (also technically an SPI device)
-	- [ ] UART (serial)
-		- [ ] Serial Level Shifter (ADM3315E)
-	- [ ] USB
-	- [ ] ADC
-		- [ ] Temp. Sensor
-		- [ ] Pressure Sensor
-	- [ ] IRCOM (Infrared)
-	- [ ] ADC devices
-		- [ ] Pressure Sensor
-		- [ ] Temperature Sensor
-	- [ ] Human Interaction
-		- [ ] 2-3 Push Buttons
-		- [ ] 2-3 Switches
-		- [ ] 2-3 LEDs
-		- [ ] 1 or 2 7segment displays
-	- [ ] Misc.
-		- [ ] Shift Register (connected to LEDs)
-	
-	
+This board serves as a place where users can practice various aspects of embedded programming using an XMega(128/64/32)A4U. The first version of this board is focused heavily on testing various types of communication protocols, featuring USB, Serial, CAN, SPI, and I2C. Additionally, the board includes a pair of 7 segment displays, and 10 LEDs (4 are digital RGB LEDs) to allow a degree of output to the user. For use with these various communication protocols, this board includes an separate ADC (with pressure and temperature sensors), flash memory IC, TTL to RS-232 level shifter, CAN transciever, and two IMUs.
+
+<img src="http://i.imgur.com/2d5tRro.png" width="600" height="600">
+
+List of Features (version 1.0)
+----
+ - 2 7-segment displays (driven by shift registers)
+ - 4 WS2812B digital RHB leds
+ - 6 0805 LEDs
+ - CAN Transciever
+ - RS-232 to TTL level shifter
+ - 2 IMUs: Acceleration, Magetometer
+ - ADC (w/ 2.5V reference chip)
+   - Temperature sensor
+   - Ambient pressure sensor
+ - Flash Memory
+ - Current Sense Op Amp
+   - Configurable load for testing
+
+Considerations for Future Versions
+----
+ - Add a character LCD display for more useful output to the user
+ - Break out more GPIO pins into headers
+ - Expand number of 7 segment displays
+ - Utilize DAC and waveform generation, include H-bridge, microphone, speaker, etc.
